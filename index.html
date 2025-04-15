@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solicitar novo passaporte - Divisão de Passaporte - Polícia Federal</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+
+<body>
+  <div class="accessibility-bar">
+    <a href="#content" id="acontent">Conteúdo <span>1</span></a>
+    <a href="#menu" id="amenu">Menu <span>2</span></a>
+    <a href="#footer" id="arodape">Fim <span>3</span></a>
+    <a href="#">Acessibilidade <span>4</span></a>
+    <a href="#" id="contrast-toggle">Alto contraste <span>5</span></a>
+  </div>
+
+  <header class="header">
+    <div class="header-logo">
+      <img src="images/logo.png" alt="Logo da Polícia Federal">
+    </div>
+    <div class="header-title">
+      <h1>Divisão de passaporte</h1>
+      <p>Coordenação-Geral de Polícia de Imigração</p>
+    </div>
+  </header>
+
+  <nav class="main-nav" id="menu">
+    <a href="#"><span class="home-icon"></span>Solicitação de passaporte</a>
+    <a href="#">Agendamento de atendimento</a>
+    <a href="#">Outros serviços</a>
+  </nav>
+
+    <h1 class="form-title">Nova solicitação de passaporte</h1>
+
+    <div class="form-nav">
+      <div class="form-nav-item active" id="painelUm">Dados pessoais</div>
+      <div class="form-nav-item" id="painelDois">Documentos</div>
+      <div class="form-nav-item" id="painelTres">Dados complementares</div>
+      <div class="form-nav-item" id="painelQuatro">Revisar dados</div>
+    </div>
+
+    <div class="required-note">(*) Preenchimento Obrigatório</div>
+
+    <div class="form-section" id="dados-pessoais-section">
+      <h2>Dados Pessoais</h2>
+      <p class="form-section-subtitle">Preencha abaixo os dados pessoais do requerente</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nome">Nome completo*:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="sexo">Sexo*:</label>
+          <select id="sexo" name="sexo" required>
+            <option value="">Selecione</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="filiacao1">Nome da filiação 1:</label>
+          <input type="text" id="filiacao1" name="filiacao1">
+        </div>
+        <div class="form-group">
+          <label for="sexo-filiacao1">Sexo da filiação 1:</label>
+          <select id="sexo-filiacao1" name="sexo-filiacao1">
+            <option value="">Selecione</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="filiacao2">Nome da filiação 2:</label>
+          <input type="text" id="filiacao2" name="filiacao2">
+        </div>
+        <div class="form-group">
+          <label for="sexo-filiacao2">Sexo da filiação 2:</label>
+          <select id="sexo-filiacao2" name="sexo-filiacao2">
+            <option value="">Selecione</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="data-nascimento">Data de nascimento*:</label>
+          <input type="text" id="data-nascimento" name="data-nascimento" placeholder="__/__/____" required>
+        </div>
+        <div class="form-group">
+          <div class="checkbox-group">
+            <input type="checkbox" id="emancipado" name="emancipado">
+            <label for="emancipado">Caso seja menor emancipado</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="checkbox-group">
+            <input type="checkbox" id="adocao-internacional" name="adocao-internacional">
+            <label for="adocao-internacional">Caso de adoção internecional</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="raca-cor">Raça ou cor*:</label>
+          <select id="raca-cor" name="raca-cor" required>
+            <option value="">Selecione</option>
+            <option value="BRANCA">Branca</option>
+            <option value="PRETA">Preta</option>
+            <option value="PARDA">Parda</option>
+            <option value="AMARELA">Amarela</option>
+            <option value="INDIGENA">Indígena</option>
+            <option value="NAO_DECLARADO">Não declarado</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="estado-civil">Estado civil:</label>
+          <select id="estado-civil" name="estado-civil">
+            <option value="">Selecione</option>
+            <option value="SOLTEIRO">Solteiro(a)</option>
+            <option value="CASADO">Casado(a)</option>
+            <option value="DIVORCIADO">Divorciado(a)</option>
+            <option value="VIUVO">Viúvo(a)</option>
+            <option value="SEPARADO">Separado(a)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nacionalidade">Nacionalidade*:</label>
+          <select id="nacionalidade" name="nacionalidade" required>
+            <option value="BRASIL">BRASIL</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Para brasileiros com múltipla nacionalidade, selecionar Brasil</p>
+        </div>
+      </div>
+
+      <h2>Local de nascimento</h2>
+      <p class="form-section-subtitle">Preencha abaixo o Local de nascimento do requerente</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="pais-nascimento">País*:</label>
+          <select id="pais-nascimento" name="pais-nascimento" required>
+            <option value="BRASIL">BRASIL</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="uf-nascimento">Estado:</label>
+          <select id="uf-nascimento" name="uf-nascimento">
+            <option value="">Selecione</option>
+            <!-- UFs do Brasil -->
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cidade-nascimento">Cidade*:</label>
+          <select id="cidade-nascimento" name="cidade-nascimento" required>
+            <option value="">Selecione</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="previous-names-section">
+      <h3>Nomes anteriores</h3>
+      <p>Para cada nome anterior, digite o nome, escolha o motivo da mudança e clique em Adicionar.</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nome-anterior">Nome anterior:</label>
+          <input type="text" id="nome-anterior" name="nome-anterior">
+        </div>
+        <div class="form-group">
+          <label for="motivo-mudanca">Motivo da mudança:</label>
+          <select id="motivo-mudanca" name="motivo-mudanca">
+            <option value="">Selecione</option>
+            <option value="CASAMENTO">Casamento</option>
+            <option value="DIVORCIO">Divórcio</option>
+            <option value="DECISAO_JUDICIAL">Decisão Judicial</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button type="button" class="btn btn-add">Adicionar</button>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <button type="button" class="btn btn-primary">PRÓXIMO</button>
+    </div>
+  </main>
+
+ </body>
+
+</html>
